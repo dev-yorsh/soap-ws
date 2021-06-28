@@ -1,0 +1,30 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://tempuri.org/PurchaseOrderSchema"
+            targetNamespace="http://tempuri.org/PurchaseOrderSchema"
+            elementFormDefault="qualified">
+
+    <xsd:element name="productoRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="nombre" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="productoResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="producto" type="tns:producto" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="producto">
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:int" />
+            <xsd:element name="nombre" type="xsd:string" />
+            <xsd:element name="categoria" type="xsd:string" />
+            <xsd:element name="precio" type="xsd:double" />
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
