@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://tempuri.org/PurchaseOrderSchema">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:productoRequest>
+            <us:nombre>Sam</us:nombre>
+        </us:productoRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
